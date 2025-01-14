@@ -54,10 +54,6 @@ body {
   cursor: pointer;
 }
 
-.bold {
-  font-weight: 500;
-}
-
 #passage {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -80,4 +76,31 @@ body {
 #info {
   padding-left: 100px;
   padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  span {
+    text-overflow: ellipsis;
+  }
+
+  #info {
+    padding: 10px;
+  }
+
+  #main img {
+    width: 60%;
+    margin: 10px 0;
+    align-self: center;
+    justify-self: center;
+  }
+  #main button {
+    height: 35px;
+    width: 35px;
+  }
 }
